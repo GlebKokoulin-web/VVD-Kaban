@@ -63,6 +63,5 @@ export default defineConfig({
         secure: false,
       },
     },
-    // allowedHosts: ["metal-stars-smile.loca.lt"],
   },
 });
