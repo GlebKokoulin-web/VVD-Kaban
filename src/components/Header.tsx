@@ -1,6 +1,7 @@
 import { Phone, Mail } from "lucide-react";
 import { useLocation } from "react-router-dom";
 
+
 export function Header() {
   const location = useLocation();
 
@@ -40,7 +41,7 @@ export function Header() {
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center">
                 <div className="text-white font-bold bg-white">
-                  <img src="src/pictures/logo/logo.png" alt="" />
+                  <img src="src/pictures/logo/logo.png" alt="logo" />
                 </div>
               </div>
               <div>

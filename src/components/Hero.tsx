@@ -23,7 +23,7 @@ export function Hero() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl">
           <h1 className="text-5xl md:text-6xl lg:text-7xl text-white mb-6">
-            Профессиональная сварка отвалов для спецтехники
+            Профессиональная сварка отвалов для техники
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8">
             Качественное изготовление отвалов для вашей техники. Гарантия на все
@@ -50,13 +50,6 @@ export function Hero() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-3  gap-6">
-            {/* <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
-              <Shield className="w-8 h-8 text-orange-500 flex-shrink-0" />
-              <div>
-                <div className="text-white">Гарантия качества</div>
-                <div className="text-gray-300 text-sm">До 1 года</div>
-              </div>
-            </div> */}
             <div className="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <Clock className="w-8 h-8 text-orange-500 flex-shrink-0" />
               <div>

@@ -71,7 +71,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
           <p>
-            &copy; {new Date().getFullYear()} Сварка Отвалов. Все права защищены.
+            &copy; {new Date().getFullYear()} VVD Kaban. Все права защищены.
           </p>
           <div className="mt-4 space-x-4">
             <a href="/legal" className="text-gray-400 hover:text-orange-500 text-sm">

@@ -1,0 +1,26 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /search
+Disallow: /*?*
+Disallow: /*.json$
+Disallow: /api/
+
+Allow: /
+Allow: /*?utm_*\
+
+# Яндекс
+User-agent: Yandex
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+Clean-param: fbclid
+Clean-param: gclid
+
+# Google
+User-agent: Googlebot
+Disallow: /print/
+
+# Bing
+User-agent: Bingbot
+Crawl-delay: 2
