@@ -137,7 +137,7 @@ export function Contact() {
               <h4 className="text-primary mb-2">Бесплатная консультация</h4>
               <p className="text-muted-foreground">
                 Свяжитесь с нами прямо сейчас и получите профессиональную
-                консультацию изготовлению отвалов
+                консультацию  по изготовлению отвалов
               </p>
             </div>
           </div>
