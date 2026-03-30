@@ -29,7 +29,7 @@ export function Hero() {
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-8">
             Качественное изготовление отвалов для вашей техники. Гарантия на все
-            виды работ.
+            виды работ. Доставка в любой город России.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-12">

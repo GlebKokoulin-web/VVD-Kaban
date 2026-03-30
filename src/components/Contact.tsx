@@ -86,13 +86,13 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-primary mb-1">Messenger</h4>
-                  <a
+                  {/* <a
                     href="https://t.me/vovkokos"
                     className="text-muted-foreground hover:text-orange-600 transition-colors"
                   >
                     Владимир в <em>Telegram</em>
-                  </a>
-                  <br />
+                  </a> */}
+                  {/* <br /> */}
                   <a
                     href="https://max.ru/u/f9LHodD0cOIMilXfE6RH0Mz2uavP8DZIbggwnPAEPbNU9OgPnuw9KOGRFtc"
                     className="text-muted-foreground hover:text-orange-600 transition-colors"

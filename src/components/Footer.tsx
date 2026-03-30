@@ -25,7 +25,7 @@ export function Footer() {
           <div>
             <h4 className="text-white mb-4">Контакты</h4>
             <div className="space-y-3">
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-orange-500" />
                 <a
                    href="https://t.me/vovkokos"
@@ -33,14 +33,14 @@ export function Footer() {
                 >
                  Telegram
                 </a>
-                {/* <Phone className="w-4 h-4 text-orange-500" />
+                <Phone className="w-4 h-4 text-orange-500" />
                 <a
                   href="tel:+79991234567"
                   className="hover:text-orange-500 transition-colors"
                 >
                   +7 (999) 123-45-67
-                </a> */}
-              </div>
+                </a>
+              </div> */}
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-orange-500" />
                 <a
