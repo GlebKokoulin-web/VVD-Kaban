@@ -106,13 +106,22 @@ export function Gallery() {
           </p>
         </div>
 
-        {/* Галерея */}
+        <iframe
+          className="mx-auto mb-8"
+          src="https://vkvideo.ru/video_ext.php?oid=-237442454&id=456239017&hash=06b7c3d74efcb9db&hd=3"
+          width="1280"
+          height="720"
+          allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
             <div
               key={index}
               className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 aspect-video cursor-pointer"
-              onClick={() => setSelectedImage(image)} 
+              onClick={() => setSelectedImage(image)}
             >
               <ImageWithFallback
                 src={image.url}
