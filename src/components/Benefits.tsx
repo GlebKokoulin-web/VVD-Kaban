@@ -1,36 +1,38 @@
-import { Users, Zap, ThumbsUp, TrendingUp, Headphones, FileCheck } from 'lucide-react';
+import {
+  Users,
+  Zap,
+  ThumbsUp,
+  TrendingUp,
+  Headphones,
+  FileCheck,
+} from "lucide-react";
 
 const benefits = [
   {
     icon: Users,
-    title: 'Опытные специалисты',
-    description: 'Квалифицированные сварщики с многолетним опытом работы',
+    title: "Опытные специалисты",
+    description: "Квалифицированные сварщики с многолетним опытом работы",
   },
   {
     icon: Zap,
-    title: 'Современное оборудование',
-    description: 'Используем профессиональное сварочное оборудование',
+    title: "Современное оборудование",
+    description: "Используем профессиональное сварочное оборудование",
   },
   {
     icon: ThumbsUp,
-    title: 'Гарантия качества',
-    description: 'Предоставляем гарантию на все выполненные работы',
+    title: "Гарантия качества",
+    description: "Предоставляем гарантию на все выполненные работы",
   },
   {
     icon: TrendingUp,
-    title: 'Конкурентные цены',
-    description: 'Оптимальное соотношение цены и качества услуг',
+    title: "Конкурентные цены",
+    description: "Оптимальное соотношение цены и качества услуг",
   },
   {
     icon: Headphones,
-    title: 'Консультации',
-    description: 'Бесплатная консультация по выбору оптимального решения',
+    title: "Консультации",
+    description: "Бесплатная консультация по выбору оптимального решения",
   },
-  // {
-  //   icon: FileCheck,
-  //   title: 'Документы',
-  //   description: 'Полный пакет документов на выполненные работы',
-  // },
 ];
 
 export function Benefits() {
@@ -38,9 +40,12 @@ export function Benefits() {
     <section id="benefits" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl text-primary mb-4">Почему выбирают нас</h2>
+          <h2 className="text-4xl md:text-5xl text-primary mb-4">
+            Почему выбирают нас
+          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Мы гарантируем высокое качество работ и индивидуальный подход к каждому клиенту
+            Мы гарантируем высокое качество работ и индивидуальный подход к
+            каждому клиенту
           </p>
         </div>
 

@@ -9,7 +9,12 @@ export function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center">
                 <div className="text-white font-bold bg-gray-900">
-                  <img src="src/pictures/logo/logo.png" alt="" />
+                  <img
+                    src="src/pictures/logo/logo.png"
+                    alt="логотип компании"
+                    width={40}
+                    height={40}
+                  />
                 </div>
               </div>
               <div>

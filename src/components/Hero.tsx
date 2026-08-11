@@ -10,14 +10,14 @@ export function Hero() {
   };
 
   return (
-    <section
-      className="relative min-h-screen flex items-center pt-20"
-    >
+    <section className="relative min-h-screen flex items-center pt-20">
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
-          src="/src/pictures/rob-lambert-9Q_pLLP_jmA-unsplash 1.jpg"
-          alt="Сварочные работы"
+          src="/src/pictures/hero-main-bg.webp"
+          alt="Сварочные работы по металлу: изготовление усиленного отвала для Нивы в мастерской"
           className="w-full h-full object-cover"
+          width={1905}
+          height={674}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
       </div>

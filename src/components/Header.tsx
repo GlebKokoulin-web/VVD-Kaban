@@ -1,7 +1,6 @@
 import { Phone, Mail } from "lucide-react";
 import { useLocation } from "react-router-dom";
 
-
 export function Header() {
   const location = useLocation();
 
@@ -19,7 +18,12 @@ export function Header() {
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center">
                 <div className="text-white font-bold bg-white">
-                  <img src="src/pictures/logo/logo.png" alt="" />
+                  <img
+                    src="src/pictures/logo/logo.png"
+                    alt="logo"
+                    width={40}
+                    height={40}
+                  />
                 </div>
               </div>
               <div>
@@ -41,7 +45,12 @@ export function Header() {
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 bg-orange-600 rounded-lg flex items-center justify-center">
                 <div className="text-white font-bold bg-white">
-                  <img src="src/pictures/logo/logo.png" alt="logo" />
+                  <img
+                    src="src/pictures/logo/logo.png"
+                    alt="logo"
+                    width={40}
+                    height={40}
+                  />
                 </div>
               </div>
               <div>
@@ -78,22 +87,6 @@ export function Header() {
                 Контакты
               </button>
             </nav>
-
-            {/* <div className="flex items-center gap-4">
-            <a
-              href="tel:+79991234567"
-              className="hidden lg:flex items-center gap-2 text-foreground hover:text-orange-600 transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              <span></span>
-            </a>
-            <button
-              onClick={() => scrollToSection("contact")}
-              className="bg-orange-600 text-white px-6 py-2 rounded-lg hover:bg-orange-700 transition-colors"
-            >
-              Заказать
-            </button>
-          </div> */}
           </div>
         </div>
       </header>
