@@ -9,18 +9,6 @@ export function Contact() {
     message: "",
   });
 
-  // const handleSubmit = (e: React.FormEvent) => {
-  //   e.preventDefault();
-
-  //   // Имитация отправки формы
-  //   if (formData.name && formData.phone) {
-  //     toast.success('Спасибо! Мы свяжемся с вами в ближайшее время.');
-  //     setFormData({ name: '', phone: '', message: '' });
-  //   } else {
-  //     toast.error('Пожалуйста, заполните обязательные поля');
-  //   }
-  // };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -68,8 +56,6 @@ export function Contact() {
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto"></p>
         </div>
-
-        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto"> */}
         <div
           className="grid justify-items-center
  max-w-6xl mx-auto"
@@ -86,13 +72,6 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-primary mb-1">Messenger</h4>
-                  {/* <a
-                    href="https://t.me/vovkokos"
-                    className="text-muted-foreground hover:text-orange-600 transition-colors"
-                  >
-                    Владимир в <em>Telegram</em>
-                  </a> */}
-                  {/* <br /> */}
                   <a
                     href="https://max.ru/u/f9LHodD0cOIMilXfE6RH0Mz2uavP8DZIbggwnPAEPbNU9OgPnuw9KOGRFtc"
                     className="text-muted-foreground hover:text-orange-600 transition-colors"
@@ -137,80 +116,10 @@ export function Contact() {
               <h4 className="text-primary mb-2">Бесплатная консультация</h4>
               <p className="text-muted-foreground">
                 Свяжитесь с нами прямо сейчас и получите профессиональную
-                консультацию  по изготовлению отвалов
+                консультацию по изготовлению отвалов
               </p>
             </div>
           </div>
-
-          {/* <div>
-            <form onSubmit={handleSubmit} className="bg-gray-50 rounded-xl p-8">
-              <h3 className="text-2xl text-primary mb-6">Заказать звонок</h3>
-
-              <div className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-foreground mb-2">
-                    Ваше имя *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-colors"
-                    placeholder="Иван Иванов"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phone" className="block text-foreground mb-2">
-                    Телефон *
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-colors"
-                    placeholder="+7 (999) 123-45-67"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-foreground mb-2"
-                  >
-                    Сообщение
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-colors resize-none"
-                    placeholder="Опишите ваш запрос..."
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-orange-600 text-white px-6 py-4 rounded-lg hover:bg-orange-700 transition-colors flex items-center justify-center gap-2"
-                >
-                  Отправить заявку
-                  <Send className="w-5 h-5" />
-                </button>
-
-                <p className="text-sm text-muted-foreground text-center">
-                  Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
-                </p>
-              </div>
-            </form>
-          </div> */}
         </div>
       </div>
     </section>
