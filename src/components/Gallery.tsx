@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import LocalVideo from "./ui/video";
 
 const galleryImages = [
   {
@@ -52,42 +53,6 @@ const galleryImages = [
   },
 ];
 
-// export function Gallery() {
-//   return (
-//     <section id="gallery" className="py-20 bg-gray-50">
-//       <div className="container mx-auto px-4">
-//         <div className="text-center mb-16">
-//           <h2 className="text-4xl md:text-5xl text-primary mb-4">
-//             Наши работы
-//           </h2>
-//           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-//             Примеры выполненных проектов по ремонту и изготовлению отвалов
-//           </p>
-//         </div>
-
-//         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-//           {galleryImages.map((image, index) => (
-//             <div
-//               key={index}
-//               className="relative group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-shadow aspect-video"
-//             >
-//               <ImageWithFallback
-//                 src={image.url}
-//                 alt={image.title}
-//                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-//               />
-//               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-//                 <div className="absolute bottom-0 left-0 right-0 p-6">
-//                   <h3 className="text-xl text-white">{/* {image.title} */}</h3>
-//                 </div>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
 export function Gallery() {
   const [selectedImage, setSelectedImage] = useState<{
     url: string;
@@ -106,16 +71,6 @@ export function Gallery() {
           </p>
         </div>
 
-        <iframe
-          className="mx-auto mb-8"
-          src="https://vkvideo.ru/video_ext.php?oid=-237442454&id=456239017&hash=06b7c3d74efcb9db&hd=3"
-          width="1280"
-          height="720"
-          allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-          frameborder="0"
-          allowfullscreen
-        ></iframe>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {galleryImages.map((image, index) => (
             <div
@@ -130,9 +85,7 @@ export function Gallery() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                 <div className="p-6">
-                  <h3 className="text-white text-lg font-medium">
-                    {/* {image.title} */}
-                  </h3>
+                  <h3 className="text-white text-lg font-medium"></h3>
                 </div>
               </div>
             </div>
@@ -140,18 +93,17 @@ export function Gallery() {
         </div>
       </div>
 
-      {/* Модальное окно (лайтбокс) */}
       {selectedImage && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
-          onClick={() => setSelectedImage(null)} // Закрытие при клике вне
+          onClick={() => setSelectedImage(null)}
         >
           <div
-            className="relative max-w-4xl max-h-full"
-            onClick={(e) => e.stopPropagation()} // Не закрывать при клике внутри
+            className="relative max-w-4xl"
+            onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="absolute -top-12 right-0 text-white text-2xl hover:text-gray-300 transition-colors"
+              className="absolute top-0 right-0 z-10 text-white text-2xl hover:text-gray-300 transition-colors bg-black/50 rounded-full w-10 h-10 flex items-center justify-center"
               onClick={() => setSelectedImage(null)}
               aria-label="Закрыть"
             >
@@ -160,11 +112,9 @@ export function Gallery() {
             <img
               src={selectedImage.url}
               alt={selectedImage.title}
-              className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
+              className="object-contain rounded-xl shadow-2xl mx-auto"
+              style={{ maxHeight: "calc(100vh - 6rem)" }}
             />
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent text-center p-4 rounded-b-lg">
-              {/* <p className="text-white text-lg">{selectedImage.title}</p> */}
-            </div>
           </div>
         </div>
       )}

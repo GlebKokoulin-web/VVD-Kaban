@@ -25,32 +25,22 @@ export function Footer() {
           <div>
             <h4 className="text-white mb-4">Контакты</h4>
             <div className="space-y-3">
-              {/* <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-orange-500" />
-                <a
-                   href="https://t.me/vovkokos"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                 Telegram
-                </a>
-                <Phone className="w-4 h-4 text-orange-500" />
-                <a
-                  href="tel:+79991234567"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  +7 (999) 123-45-67
-                </a>
-              </div> */}
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-orange-500" />
                 <a
                   href="https://max.ru/u/f9LHodD0cOIMilXfE6RH0Mz2uavP8DZIbggwnPAEPbNU9OgPnuw9KOGRFtc"
                   className="hover:text-orange-500 transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                 MAX
+                  MAX
                 </a>
                 <div>
-                  <a href="https://www.avito.ru/kirovskaya_oblast_kirov/zapchasti_i_aksessuary/otval_dlya_karakata_vezdehoda_otval_na_nivu_7567849644?utm_campaign=native&utm_medium=item_page_android&utm_source=soc_sharing"></a>
+                  <a
+                    href="https://www.avito.ru/kirovskaya_oblast_kirov/zapchasti_i_aksessuary/otval_dlya_karakata_vezdehoda_otval_na_nivu_7567849644?utm_campaign=native&utm_medium=item_page_android&utm_source=soc_sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
                 </div>
               </div>
               <div className="flex items-start gap-2">
@@ -74,7 +64,10 @@ export function Footer() {
             &copy; {new Date().getFullYear()} VVD Kaban. Все права защищены.
           </p>
           <div className="mt-4 space-x-4">
-            <a href="/legal" className="text-gray-400 hover:text-orange-500 text-sm">
+            <a
+              href="/legal"
+              className="text-gray-400 hover:text-orange-500 text-sm"
+            >
               Правовая информация
             </a>
           </div>
