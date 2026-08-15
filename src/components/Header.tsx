@@ -54,7 +54,7 @@ export function Header() {
                 </div>
               </div>
               <div>
-                <h1 className="text-primary">VVD Kaban</h1>
+                <h2 className="text-primary">VVD Kaban</h2>
                 <p className="text-xs text-muted-foreground">
                   Профессионально и надёжно
                 </p>

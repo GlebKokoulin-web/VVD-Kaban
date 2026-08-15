@@ -25,7 +25,7 @@ const galleryImages = [
   },
   {
     url: "src/pictures/gallery/img002.jpg",
-    title: "Установка отвала на трактор МТЗ",
+    title: "Установка отвала",
   },
   {
     url: "src/pictures/gallery/img003.jpg",
@@ -45,7 +45,7 @@ const galleryImages = [
   },
   {
     url: "src/pictures/gallery/img013.jpg",
-    title: "Подключение гидравлики к отвалу",
+    title: "Изготовление отвала для Нивы",
   },
   {
     url: "src/pictures/gallery/img014.jpg",
