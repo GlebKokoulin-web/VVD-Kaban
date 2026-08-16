@@ -24,3 +24,5 @@ Disallow: /print/
 # Bing
 User-agent: Bingbot
 Crawl-delay: 2
+
+Sitemap: https://vvdkaban.ru/sitemap.xml
