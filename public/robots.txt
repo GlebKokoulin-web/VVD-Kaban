@@ -6,8 +6,6 @@ Disallow: /*?*
 Disallow: /*.json$
 Disallow: /api/
 
-Allow: /
-Allow: /*?utm_*\
 
 # Яндекс
 User-agent: Yandex
