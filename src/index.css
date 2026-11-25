@@ -1725,3 +1725,177 @@ html {
   inherits: false;
   initial-value: 1;
 }
+
+/* ==========================================================================
+   Мобильное меню (бургер в Header)
+
+   В проекте нет сборки Tailwind: этот файл — готовый CSS из экспорта Figma,
+   и в нём есть только те утилиты, которые использовались при экспорте.
+   Поэтому стили шторки и бургера заданы здесь обычным CSS.
+   ========================================================================== */
+
+/* Кнопка-бургер: показывается только при ширине <= 767px */
+.header-burger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--spacing) * 2);
+  border-radius: var(--radius);
+  color: var(--foreground);
+  background: none;
+  transition: background-color 0.15s;
+}
+
+.header-burger:hover {
+  background-color: var(--color-gray-100);
+}
+
+@media (max-width: 767px) {
+  .header-burger {
+    display: inline-flex;
+  }
+}
+
+/* Затемнение под шторкой */
+[data-slot="sheet-overlay"] {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background-color: rgb(0 0 0 / 0.5);
+}
+
+[data-slot="sheet-overlay"][data-state="open"] {
+  animation: sheet-fade-in 0.3s ease-in-out;
+}
+
+[data-slot="sheet-overlay"][data-state="closed"] {
+  animation: sheet-fade-out 0.3s ease-in-out forwards;
+}
+
+/* Панель: выезжает справа */
+[data-slot="sheet-content"] {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 4);
+  width: 16rem;
+  max-width: 85vw;
+  background-color: var(--background);
+  border-left: 1px solid var(--border);
+  box-shadow:
+    0 10px 15px -3px rgb(0 0 0 / 0.1),
+    0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+[data-slot="sheet-content"][data-state="open"] {
+  animation: sheet-slide-in 0.3s ease-in-out;
+}
+
+[data-slot="sheet-content"][data-state="closed"] {
+  animation: sheet-slide-out 0.3s ease-in-out forwards;
+}
+
+@keyframes sheet-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sheet-fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes sheet-slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes sheet-slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* Кнопка закрытия шторки */
+.sheet-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: calc(var(--radius) - 4px);
+  color: var(--foreground);
+  background: none;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.sheet-close:hover {
+  opacity: 1;
+}
+
+.sheet-close svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Пункты меню внутри шторки */
+.sheet-nav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  margin-top: calc(var(--spacing) * 16);
+}
+
+.sheet-nav button {
+  padding: calc(var(--spacing) * 3) calc(var(--spacing) * 4);
+  border-radius: var(--radius);
+  font-size: var(--text-lg);
+  line-height: 1.5;
+  text-align: left;
+  color: var(--foreground);
+  background: none;
+  transition:
+    color 0.15s,
+    background-color 0.15s;
+}
+
+.sheet-nav button:hover {
+  color: var(--color-orange-600);
+  background-color: var(--color-gray-50);
+}
+
+/* Скрытый визуально, но доступный скринридерам текст */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
