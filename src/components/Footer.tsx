@@ -45,6 +45,7 @@ export function Footer() {
                 <Handshake className="w-4 h-4 text-orange-500" />
                 <a
                   href="https://www.avito.ru/kirovskaya_oblast_kirov/zapchasti_i_aksessuary/otval_dlya_karakata_vezdehoda_otval_na_nivu_7567849644?utm_campaign=native&utm_medium=item_page_android&utm_source=soc_sharing"
+                  className="hover:text-orange-500 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
