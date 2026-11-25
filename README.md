@@ -96,7 +96,7 @@ npm install
 npm run dev
 ```
 
-После запуска откройте [http://localhost:5173](http://localhost:5173) в браузере.
+После запуска откройте [http://localhost:3000](http://localhost:3000) в браузере.
 
 ### Сборка для продакшена
 
