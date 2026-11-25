@@ -67,9 +67,11 @@ export function Contact() {
 
             <div className="grid md:grid-cols-3 space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6 text-orange-600" />
-                </div>
+                <a href="https://max.ru/u/f9LHodD0cOIMilXfE6RH0Mz2uavP8DZIbggwnPAEPbNU9OgPnuw9KOGRFtc">
+                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-orange-600" />
+                  </div>
+                </a>
                 <div>
                   <h4 className="text-primary mb-1">Messenger</h4>
                   <a
@@ -82,9 +84,11 @@ export function Contact() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <Handshake className="w-6 h-6 text-orange-600" />
-                </div>
+                <a href="https://www.avito.ru/moskva/zapchasti_i_aksessuary/otval_na_karakat_vezdehod_otval_na_nivu_7567275411?utm_campaign=native&utm_medium=item_page_android&utm_source=soc_sharing">
+                  <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Handshake className="w-6 h-6 text-orange-600" />
+                  </div>
+                </a>
                 <div>
                   <h4 className="text-primary mb-1">Avito</h4>
                   <a
